@@ -1,9 +1,9 @@
 import "./App.css";
-import Variants from "./Components/Variants";
+import Cost from "./Components/Cost/Cost";
 
 function App() {
   return (
-    <body className="app container">
+    <div className="app container">
       <section className="row">
         <div style={{ height: "500px" }} className="col-lg-6 ">
           <img
@@ -23,26 +23,11 @@ function App() {
             </p>
           </div>
           <div>
-            <Variants
-              heading={"Memory"}
-              text1={"8GB unified memory "}
-              text2={"16GB unified memory "}
-            />
-            <Variants
-              heading={"Storage"}
-              text1={"256GB SSD storage  "}
-              text2={"512GB SSD storage "}
-              text3={"1TB SSD storage "}
-            />
-            <Variants
-              heading={"Choose Your delivery Option"}
-              text1={"Friday, Aug 25 FREE Prime Delivery"}
-              text2={" Friday, Aug 21 Delivery charge $20 "}
-            />
+            <Cost />
           </div>
         </div>
       </section>
-    </body>
+    </div>
   );
 }
 
